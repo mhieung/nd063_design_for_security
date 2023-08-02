@@ -1,0 +1,23 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+AWS CloudFormation Linter (cfn-lint): https://github.com/aws-cloudformation/cfn-lint
+Checkov: https://github.com/bridgecrewio/checkov
+Regula: https://github.com/fugue/regula
+
+
+### Example vulnerability
+- Access logs not enabled to resources that support it
+- Server Side Encryption (SSE) not enabled
+
+##Scan AMI’s or containers for OS vulnerabilities
+Ansible
+
+### Example vulnerability
+SSH root access with password logon
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+AWS GuardDuty
+
+### Example vulnerability
+UnauthorizedAccess:EC2/SSHBruteForce

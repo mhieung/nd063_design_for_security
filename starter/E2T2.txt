@@ -1,0 +1,12 @@
+Research and analyze which of the vulnerabilities appear to be related to the code that was deployed for the environment in this project.
+Security groups should not allow unrestricted access to ports with high risk
+The VPC default security group should not allow inbound and outbound traffic
+Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389
+EC2 instances should not have a public IPv4 address
+Security groups should not allow ingress from 0.0.0.0/0 to port 22
+Security groups should only allow unrestricted incoming traffic for authorized ports
+IAM customer managed policies that you create should not allow wildcard actions for services
+
+Bonus - provide recommendations on how to remediate the vulnerabilities.
+ Limit the traffic on the Security Groups allow only secure ports such as 80, 443. 
+ Set IAM policies for not allowing root user and to enforce MFA, as well as the specific permissions.
